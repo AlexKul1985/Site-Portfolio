@@ -1,12 +1,13 @@
 {
-  "name": "20170526",
+  "name": "sda",
   "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.4.0",
+    "gulp-clean-css": "^3.4.1",
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-less": "^3.3.0",
     "gulp-sourcemaps": "^2.6.0",
@@ -16,7 +17,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKul1985/Site-Portfolio.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/AlexKul1985/Site-Portfolio/issues"
+  },
+  "homepage": "https://github.com/AlexKul1985/Site-Portfolio#readme"
 }
