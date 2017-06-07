@@ -1,0 +1,457 @@
+/* --------------- reset.css --------------- */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* обнуляем отступы и убираем бордюры */
+  vertical-align: baseline;
+  /* приводим все к одной базовой линии */
+  background: transparent;
+  /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+  font-size: 100%;
+  /* размер шрифта всем одинаковый */
+}
+
+a {
+  /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none;
+}
+
+table {
+  /* устраняем отступы между ячейками таблицы */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+td img {
+  vertical-align: top;
+  /* возвращаем привычное вертикальное выравнивание */
+}
+
+input,
+select,
+button,
+textarea {
+  margin: 0;
+  /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+  font-size: 100%;
+  /* делаем размер шрифтов везде одинаковым */
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 0;
+  /* убираем внутренние отступы для текстовых полей */
+}
+
+input[type="checkbox"] {
+  /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+  vertical-align: bottom;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+html {
+  min-height: 100%;
+  /* всегда показываем вертикальную полосу прокрутки  */
+}
+
+body {
+  color: #000;
+  text-align: left;
+  font-size: 1em;
+  /* используем безопасные шрифтовые CSS стеки */
+  min-height: 100%;
+}
+
+a,
+a:visited {
+  /* порядок правил для ссылок имеет значение */
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  color: #c83867;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clr {
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+/*.reset();*/
+
+/*---------------------------HEADER-----------------------------------*/
+
+html,
+body {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1228px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  /*.wrapper {
+        
+    }*/
+}
+
+.header__top .header__logo {
+  margin-top: 35px;
+  width: 15.5%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.header__top .header__logo .logo__link {
+  display: block;
+  font-size: 0;
+  width: 182px;
+  height: 46px;
+  background: url(../img/sprite_1.png) no-repeat 0 1px;
+  /* background-size: 100% ;*/
+}
+
+.header__top .header__menu {
+  float: left;
+  margin-top: 55px;
+  width: 59%;
+  margin-left: 17.5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header__top .header__menu .button__click {
+  color: #fff;
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.header__top .header__menu .menu__item {
+  /*display: inline-block;
+            vertical-align: middle;*/
+  float: left;
+  margin-right: 30px;
+  font-size: 0.875em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header__top .header__menu .menu__item--link {
+  text-decoration: none;
+}
+
+.header__top .header__menu .menu__item--link:hover {
+  color: #c7b299;
+}
+
+.header__top .header__icons {
+  margin-top: 55px;
+  font-size: 0;
+  float: right;
+  width: 6.5%;
+  box-sizing: border-box;
+  /* text-align:right;*/
+}
+
+.header__top .header__icons .icon__basket {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__top .header__icons .icon__basket .icon__basket--1 {
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  background: url(../img/sprite_1.png) no-repeat -29px -115px;
+  vertical-align: middle;
+}
+
+.header__top .header__icons .icon__search {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 28px;
+}
+
+.header__top .header__icons .icon__search .icon__search--2 {
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  background: url(../img/sprite_1.png) no-repeat -31px -140px;
+  vertical-align: middle;
+}
+
+/*-----------------------------HEADER_SLIDER-------------------------------*/
+
+.header__slider--item {
+  position: relative;
+}
+
+.header__slider img {
+  width: 100%;
+  font-size: 0;
+}
+
+.header__slider .wrap__desc {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  right: 0%;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.header__slider .wrap__desc .header__slider--text {
+  display: block;
+  font-size: 2.25em;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  margin-bottom: 13px;
+}
+
+.header__slider .wrap__desc h1.header__slider--title {
+  font-size: 3.25em;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.header__slider .wrap__desc p.header__slider--prg {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 1em;
+  font-family: 'Myriad Pro', sans-serif;
+  color: #fff;
+  margin-bottom: 52px;
+}
+
+.header__slider .wrap__desc a.header__slider--button {
+  font-size: 0.875em;
+  font-family: 'Myriad Pro', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 45px;
+  border-radius: 7px;
+  background: #998675;
+  box-shadow: 0 -3px 0 #736357 inset;
+}
+
+@media screen and (max-width: 1264px) {
+  .header__top .header__logo {
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .header__top .header__menu {
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 35px;
+  }
+
+  .header__top .header__icons {
+    text-align: right;
+    width: 20%;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .header__top .header__logo {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .header__top .header__menu .button__click {
+    display: inline-block;
+    margin-top: -4px;
+  }
+
+  .header__top .header__menu {
+    width: 30%;
+    margin-top: 15px;
+  }
+
+  .header__top .header__menu .menu {
+    display: none;
+  }
+
+  .header__top .header__menu .menu__item {
+    float: none;
+    width: 100%;
+    background: rgba(7, 7, 7, 0.3);
+    margin-bottom: 5px;
+    padding: 5px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .header__top .header__icons {
+    width: 30%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .header__slider .wrap__desc .header__slider--text {
+    font-size: 1.125em;
+  }
+
+  .header__slider .wrap__desc h1.header__slider--title {
+    font-size: 1.625em;
+  }
+
+  .header__slider .wrap__desc p.header__slider--prg {
+    font-size: 0.7em;
+    max-width: 320px;
+  }
+
+  .header__slider .wrap__desc a.header__slider--button {
+    font-size: 0.5em;
+    padding: 12px 25px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
