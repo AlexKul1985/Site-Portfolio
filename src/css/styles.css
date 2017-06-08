@@ -223,31 +223,31 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  text-align: center;
+  text-align: right;
+}
+
+.header__top .wrapper {
+  position: relative;
 }
 
 .header__top .header__logo {
-  margin-top: 35px;
-  width: 15.5%;
-  box-sizing: border-box;
-  float: left;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 182px;
+  height: 46px;
 }
 
 .header__top .header__logo .logo__link {
   display: block;
-  font-size: 0;
-  width: 182px;
-  height: 46px;
-  background: url(../img/sprite_1.png) no-repeat 0 1px;
+  width: 100%;
 }
 
 .header__top .header__menu {
-  float: left;
+  display: inline-block;
   margin-top: 55px;
-  width: 59%;
-  margin-left: 17.5%;
-  box-sizing: border-box;
-  text-align: center;
+  /*Кнопка выпадающего меню*/
+  /*Кнопка выпадающего меню*/
 }
 
 .header__top .header__menu .button__click {
@@ -264,6 +264,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.header__top .header__menu .menu__item:last-child {
+  margin-right: 63px;
+}
+
 .header__top .header__menu .menu__item--link {
   text-decoration: none;
 }
@@ -276,8 +280,6 @@ body {
   margin-top: 55px;
   font-size: 0;
   float: right;
-  width: 6.5%;
-  box-sizing: border-box;
 }
 
 .header__top .header__icons .icon__basket {
@@ -288,9 +290,8 @@ body {
 .header__top .header__icons .icon__basket .icon__basket--1 {
   display: inline-block;
   width: 20px;
-  height: 25px;
-  background: url(../img/sprite_1.png) no-repeat -29px -115px;
-  vertical-align: middle;
+  height: 24px;
+  background: url(../img/sprite_1.png) no-repeat -29px -116px;
 }
 
 .header__top .header__icons .icon__search {
@@ -298,6 +299,8 @@ body {
   position: relative;
   vertical-align: middle;
   margin-left: 28px;
+  /*---------строка поиска--------*/
+  /*---------строка поиска--------*/
 }
 
 .header__top .header__icons .icon__search .icon__search--2 {
@@ -305,7 +308,17 @@ body {
   width: 25px;
   height: 23px;
   background: url(../img/sprite_1.png) no-repeat -31px -140px;
-  vertical-align: middle;
+}
+
+.header__top .header__icons .icon__search .search_tostring {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  color: black;
+  font-size: 16px;
 }
 
 /*-----------------------------HEADER_SLIDER-------------------------------*/
