@@ -7,5 +7,10 @@ $(function(){
 	});
 
 
-	$('.my_slider').slick();
+	$('.my_slider').bxSlider({
+		auto: true,
+		controls:true,
+		pause: 10000
+
+	});
 });
