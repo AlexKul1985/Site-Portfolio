@@ -232,7 +232,7 @@ body {
 
 .header__top .header__logo {
   position: absolute;
-  top: 35px;
+  top: 33px;
   left: 30px;
   width: 182px;
   height: 46px;
@@ -308,6 +308,7 @@ body {
   width: 25px;
   height: 23px;
   background: url(../img/sprite_1.png) no-repeat -31px -140px;
+  cursor: pointer;
 }
 
 .header__top .header__icons .icon__search .search_tostring {
@@ -377,5 +378,106 @@ body {
   border-radius: 7px;
   background: #998675;
   box-shadow: 0 -3px 0 #736357 inset;
+}
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .header__top {
+    text-align: left;
+  }
+
+  .header__top .header__logo {
+    position: static;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .header__top .header__logo .logo__link {
+    width: 95%;
+  }
+
+  .header__top .header__menu {
+    margin-top: 35px;
+  }
+
+  .header__top .header__icons {
+    margin-top: 35px;
+  }
+
+  .header__slider .wrap__desc .header__slider--text {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .header__top .header__logo {
+    position: absolute;
+    margin-top: 0;
+    top: 18px;
+    left: 30px;
+  }
+
+  .header__top .header__logo .logo__link {
+    width: 75%;
+  }
+
+  .header__top .header__menu {
+    width: 100%;
+    text-align: justify;
+    margin-top: 85px;
+  }
+
+  .header__top .header__menu .menu::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    text-align: justify;
+  }
+
+  .header__top .header__menu .menu__item {
+    float: none;
+    display: inline-block;
+    margin-right: 0px;
+  }
+
+  .header__top .header__icons {
+    margin-top: 0;
+    float: none;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+  }
+
+  .header__slider .wrap__desc {
+    top: 40%;
+  }
+
+  .header__slider .wrap__desc .header__slider--text {
+    font-size: 1.25em;
+    margin-bottom: 7px;
+  }
+
+  .header__slider .wrap__desc h1.header__slider--title {
+    font-size: 2.25em;
+    margin-bottom: 10px;
+  }
+
+  .header__slider .wrap__desc p.header__slider--prg {
+    font-size: 0.55em;
+    margin-bottom: 42px;
+  }
+
+  .header__slider .wrap__desc a.header__slider--button {
+    font-size: 0.55em;
+    padding: 8px 25px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
