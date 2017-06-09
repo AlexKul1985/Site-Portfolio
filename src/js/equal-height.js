@@ -11,5 +11,5 @@ $(document).ready(function(){
 		columns.height(tallestcolumn);
 	}
 		
-	setEqualHeight($('.last1, last2, .last3'));
+	setEqualHeight($('.title__cust , .title__mark ,.title__dev, .title__web'));
 });
